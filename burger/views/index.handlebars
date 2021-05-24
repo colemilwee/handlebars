@@ -1,0 +1,16 @@
+<header>
+    <h1>Burgers</h1>
+</header>
+<div class="row">
+    <div class="col-6">
+        <h1>Eat burgers</h1>
+        <ul>
+ {{#each burgers}}
+      {{#unless eaten}}
+      {{> burgers/burger-block devoured=true}}
+      {{/unless}}
+      {{/each}}
+        </ul>
+    </div>
+</div>
+
